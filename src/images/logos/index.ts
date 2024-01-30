@@ -15,8 +15,11 @@ import ParabolLogo from "./parabol.svg";
 import TastyCloudLogo from "./tastycloud.png";
 import YearProgressLogo from "./yearprogress.svg";
 import Minimal from "./minimal.svg";
+import FlowLogo from "./flow-icon-white.png";
+import PartykitLogo from "./partykit.png";
 
 export {
+  PartykitLogo,
   ConsultlyLogo,
   AmbitLogo,
   BarepapersLogo,
@@ -34,4 +37,5 @@ export {
   TastyCloudLogo,
   YearProgressLogo,
   Minimal,
+  FlowLogo,
 };
