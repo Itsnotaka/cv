@@ -89,7 +89,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Current",
       description:
-        "An alumni of Cognosys AI, Vercel and Next.js.I have develope a realtime AI demo for them as a contractor.",
+        "An alumni of Cognosys AI, Vercel and Next.js. I have develope a realtime AI demo for them as a contractor.",
     },
   ],
   skills: [
