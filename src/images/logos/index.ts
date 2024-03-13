@@ -17,7 +17,7 @@ import YearProgressLogo from "./yearprogress.svg";
 import Minimal from "./minimal.svg";
 import FlowLogo from "./flow-icon-white.png";
 import PartykitLogo from "./partykit.png";
-
+import CognosysAiLogo from './cog.png'
 export {
   PartykitLogo,
   ConsultlyLogo,
@@ -38,4 +38,5 @@ export {
   YearProgressLogo,
   Minimal,
   FlowLogo,
+  CognosysAiLogo
 };

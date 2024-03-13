@@ -16,6 +16,7 @@ import {
   NSNLogo,
   ParabolLogo,
   PartykitLogo,
+  CognosysAiLogo,
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
@@ -60,6 +61,12 @@ export const RESUME_DATA = {
       start: "2021",
       end: "2025",
     },
+    {
+      school: "Chinese University of Hong Kong",
+      degree: "Bachelor's Degree in Business Management & Economics (exchange)",
+      start: "2023",
+      end: "2024",
+    },
   ],
   work: [
     {
@@ -68,10 +75,21 @@ export const RESUME_DATA = {
       badges: ["Remote", "Dev advocate"],
       title: "Dev Advocate",
       logo: PartykitLogo,
-      start: "2023",
+      start: "2022",
       end: "Current",
       description:
         "PartyKit is a platform for building realtime apps. It's like Firebase, but open source and built on WebSockets. I'm helping them with their documentation and community building. My project – Flow, is a realtime CMS built on top of PartyKit, which is featured on their website.",
+    },
+    {
+      company: "Cognosys AI",
+      link: "https://www.cognosys.ai/",
+      badges: ["Interview"],
+      title: "Interviewee",
+      logo: CognosysAiLogo,
+      start: "2023",
+      end: "Current",
+      description:
+        "An alumni of Cognosys AI, Vercel and Next.js.I have develope a realtime AI demo for them as a contractor.",
     },
   ],
   skills: [
