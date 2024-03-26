@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   about:
     "Business Management student, also a self-taught Full Stack Engineer. Focused on building web applications with attention to details.",
   summary:
-    "As a business student, I have gained valuable experience collaborating with diverse teams globally. My knowledge spans various areas of business, including economics, finance, marketing, and management. I have successfully initiated and led multiple projects, taking them from ideation to completion. Currently, I primarily work with TypeScript, React (Next.js), Node.js, and tRPC.",
+    "My knowledge spans various areas of business, including economics, finance, marketing, and management.",
   avatarUrl: "",
   personalWebsiteUrl: "https://nameisdaniel.com",
   contact: {
@@ -62,7 +62,7 @@ export const RESUME_DATA = {
       start: "2022",
       end: "Current",
       description:
-        "PartyKit is a platform for building realtime apps. It's like Firebase, but open source and built on WebSockets. I'm helping them with their documentation and community building. My project – Flow, is a realtime CMS built on top of PartyKit, which is featured on their website.",
+        "PartyKit is a platform for building realtime apps. I'm helping them with their documentation and community building. My project – Flow, is featured on their website.",
     },
     {
       company: "Buildspace",
@@ -81,8 +81,8 @@ export const RESUME_DATA = {
       badges: ["Interview"],
       title: "Interviewee",
       logo: CognosysAiLogo,
-      start: "2023",
-      end: "Current",
+      start: "2024",
+      end: "2024",
       description:
         "An alumni of Cognosys AI, Vercel and Next.js. I have develope a realtime AI demo for them as a contractor.",
     },
