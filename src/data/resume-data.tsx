@@ -71,7 +71,7 @@ export const RESUME_DATA = {
       title: "N&W S4 Builder",
       logo: BuildspaceLogo,
       start: "2023",
-      end: "Current",
+      end: "2023",
       description: `Selected for a 6-week program (funded by Y Combinator, a16z) to build a revolutionary product in a tech
         community with experts from around the world ending with a 3-day demo weekend in San Francisco`,
     },
