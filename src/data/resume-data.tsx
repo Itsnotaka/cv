@@ -1,24 +1,8 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
   FlowLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
+  BuildspaceLogo,
   PartykitLogo,
   CognosysAiLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -79,6 +63,17 @@ export const RESUME_DATA = {
       end: "Current",
       description:
         "PartyKit is a platform for building realtime apps. It's like Firebase, but open source and built on WebSockets. I'm helping them with their documentation and community building. My project – Flow, is a realtime CMS built on top of PartyKit, which is featured on their website.",
+    },
+    {
+      company: "Buildspace",
+      link: "https://buildspace.so",
+      badges: ["Participant", "Intern"],
+      title: "N&W S4 Builder",
+      logo: BuildspaceLogo,
+      start: "2023",
+      end: "Current",
+      description: `Selected for a 6-week program (funded by Y Combinator, a16z) to build a revolutionary product in a tech
+        community with experts from around the world ending with a 3-day demo weekend in San Francisco`,
     },
     {
       company: "Cognosys AI",
