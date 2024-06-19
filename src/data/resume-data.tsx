@@ -2,7 +2,7 @@ import {
   FlowLogo,
   BuildspaceLogo,
   PartykitLogo,
-  CognosysAiLogo,
+  LiveblocksLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -19,7 +19,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://nameisdaniel.com",
   contact: {
     email: "nameisdaniel@flowapp.so",
-    tel: "+85296104365",
+    tel: "+19295132767",
     social: [
       {
         name: "GitHub",
@@ -32,7 +32,7 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
       {
-        name: "X",
+        name: "Twitter (X)",
         url: "https://x.com/d2ac__",
         icon: XIcon,
       },
@@ -40,56 +40,57 @@ export const RESUME_DATA = {
   },
   education: [
     {
+      school: "Chinese University of Hong Kong (Exchange)",
+      degree: "Bachelor's Degree in Business Management & Economics",
+      start: "2023",
+      end: "2024",
+    },
+    {
       school: "Pennsylvania State University",
       degree: "Bachelor's Degree in Business Management & Economics",
       start: "2021",
       end: "2025",
     },
-    {
-      school: "Chinese University of Hong Kong",
-      degree: "Bachelor's Degree in Business Management & Economics (exchange)",
-      start: "2023",
-      end: "2024",
-    },
   ],
 
   work: [
-        {
-          company: "PartyKit",
-          link: "https://partykit.io",
-          badges: ["Remote", "Dev advocate"],
-          title: "Dev Advocate",
-          logo: PartykitLogo,
-          start: "2022",
-          end: "Current",
-          description:
-            "Assisting with documentation and community development at PartyKit. Featured project 'Flow' on their website.",
-        },
-        {
-          company: "Buildspace",
-          link: "https://buildspace.so",
-          badges: ["Participant", "Intern"],
-          title: "N&W S4 Builder",
-          logo: BuildspaceLogo,
-          start: "2023",
-          end: "2023",
-          description:
-            "Chosen for a 6-week program funded by Y Combinator, a16z. Collaborated internationally to create a groundbreaking product, culminating in a 3-day demo event in San Francisco.",
-        },
-        {
-          company: "Cognosys AI",
-          link: "https://www.cognosys.ai/",
-          badges: ["Interview"],
-          title: "Interviewee",
-          logo: CognosysAiLogo,
-          start: "2024",
-          end: "2024",
-          description:
-            "created a real-time AI demo during the interview for Cognosys AI, leveraging past experiences from Vercel, ai-sdk and Next.js.",
-        },
-      ],
+    {
+      company: "PartyKit",
+      link: "https://partykit.io",
+      badges: ["Remote", "Dev advocate"],
+      title: "Dev Advocate",
+      logo: PartykitLogo,
+      start: "2022",
+      end: "Current",
+      description:
+        "Assisting with documentation and community development at PartyKit. Featured project 'Flow' on their website.",
+    },
+    {
+      company: "Liveblocks",
+      link: "https://www.liveblocks.io/",
+      badges: ["Fullstack Engineer (IC3)"],
+      title: "Offer Received: Fullstack Engineer",
+      logo: LiveblocksLogo,
+      start: "2024",
+      end: "2024",
+      description:
+        "Received an offer to be a Fullstack Engineer at Liveblocks but was unable to proceed due to visa restrictions.",
+    },
 
-      skills: [
+    {
+      company: "Buildspace",
+      link: "https://buildspace.so",
+      badges: ["Participant", "Intern"],
+      title: "N&W S4 Builder",
+      logo: BuildspaceLogo,
+      start: "2023",
+      end: "2023",
+      description:
+        "Chosen for a 6-week program funded by Y Combinator, a16z. Collaborated internationally to create a groundbreaking product, culminating in a 3-day demo event in San Francisco.",
+    },
+  ],
+
+  skills: [
     "JavaScript",
     "TypeScript",
     "React/Next.js/Remix",
