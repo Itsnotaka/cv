@@ -7,9 +7,10 @@
     "dev": "pnpm pre-dev && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check --write"
   },
   "dependencies": {
+    "@biomejs/biome": "^1.8.1",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
@@ -30,11 +31,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
-    "eslint": "^9.5.0",
-    "eslint-config-next": "14.0.4",
     "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },

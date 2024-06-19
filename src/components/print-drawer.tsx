@@ -1,16 +1,16 @@
 "use client";
 
-import { Button } from "./ui/button";
 import { PrinterIcon } from "lucide-react";
+import { Button } from "./ui/button";
 import {
   Drawer,
-  DrawerTrigger,
+  DrawerClose,
   DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
   DrawerDescription,
   DrawerFooter,
-  DrawerClose,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
 } from "./ui/drawer";
 
 export const PrintDrawer = () => {
@@ -27,7 +27,7 @@ export const PrintDrawer = () => {
             <DrawerTitle>Move Goal</DrawerTitle>
             <DrawerDescription>Set your daily activity goal.</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0"></div>
+          <div className="p-4 pb-0" />
           <DrawerFooter>
             <Button onClick={() => window.print()}>Print</Button>
             <DrawerClose asChild>

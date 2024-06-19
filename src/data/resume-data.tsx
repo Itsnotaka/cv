@@ -1,10 +1,10 @@
-import {
-  FlowLogo,
-  BuildspaceLogo,
-  PartykitLogo,
-  LiveblocksLogo,
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import {
+  BuildspaceLogo,
+  FlowLogo,
+  LiveblocksLogo,
+  PartykitLogo,
+} from "@/images/logos";
 
 export const RESUME_DATA = {
   name: "Min Chun Fu",

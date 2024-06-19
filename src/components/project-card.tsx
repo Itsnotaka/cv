@@ -1,13 +1,14 @@
+import Image from "next/image";
+import { Badge } from "./ui/badge";
 import {
   Card,
-  CardHeader,
   CardContent,
   CardDescription,
+  CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Badge } from "./ui/badge";
-import Image from "next/image";
 interface Props {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   logo: any; // use any to avoid conflict
   title: string;
   description: string;
@@ -34,9 +35,9 @@ export function ProjectCard({ logo, title, description, tags, link }: Props) {
                   href={link}
                   target="_blank"
                   className="inline-flex items-center gap-1 hover:underline"
+                  rel="noreferrer"
                 >
-                  {title}{" "}
-                  <span className="size-1 rounded-full bg-green-500"></span>
+                  {title} <span className="size-1 rounded-full bg-green-500" />
                 </a>
               ) : (
                 title
