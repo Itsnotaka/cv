@@ -73,8 +73,9 @@ export const RESUME_DATA = {
       logo: LiveblocksLogo,
       start: "2024",
       end: "2024",
-      description:
-        "Received an offer to be a Fullstack Engineer at Liveblocks but was unable to proceed due to visa restrictions.",
+      description: [
+        `Received an offer to be a Fullstack Engineer at Liveblocks but was unable to proceed due to visa restrictions. Check the reference here: https://cv.nameisdaniel.com/liveblocks-reference.png`,
+      ],
     },
 
     {
