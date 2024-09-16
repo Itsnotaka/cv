@@ -17,7 +17,7 @@ export const PrintDrawer = () => {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button className="fixed bottom-4 right-4 size-16 rounded-full shadow-2xl print:hidden">
+        <Button className="fixed right-4 bottom-4 size-16 rounded-full shadow-2xl print:hidden">
           <PrinterIcon />
         </Button>
       </DrawerTrigger>
@@ -27,7 +27,7 @@ export const PrintDrawer = () => {
             <DrawerTitle>Move Goal</DrawerTitle>
             <DrawerDescription>Set your daily activity goal.</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0"></div>
+          <div className="p-4 pb-0" />
           <DrawerFooter>
             <Button onClick={() => window.print()}>Print</Button>
             <DrawerClose asChild>
