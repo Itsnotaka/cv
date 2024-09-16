@@ -50,7 +50,7 @@ export const RESUME_DATA = {
       start: '2023',
       end: null,
       description:
-        'Implemented new features, led a squad, improved code delivery process, and initiated migration from Emotion to Tailwind CSS. Technologies: React, TypeScript, GraphQL',
+        'Help engage with the developer community. Create projects, examples and documentations regarding partykit. Ship bug fixes and features for partykit. Technologies: Next.js, TailwindCSS, Partykit',
     },
     {
       company: 'Aiplux',
@@ -61,7 +61,8 @@ export const RESUME_DATA = {
       logo: aipluxLogo,
       start: '2024',
       end: '2024',
-      description: 'Leading the development of the Film.io platform. Technologies: React, TypeScript, Node.js',
+      description:
+        'Leading the development of their project. Finished the project that were suppose to be finished in 1 year in 2 months. Technologies: Vue, Nuxt.js, TypeScript, Node.js, Turborepo (monorepo)',
     },
     {
       company: 'Liveblocks',
