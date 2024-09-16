@@ -121,7 +121,9 @@ export default function Page() {
         </Section>
         <Section className="scroll-mb-16">
           <h2 className="font-bold text-xl">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2">
+          <div
+            className={`-mx-3 grid gap-3 print:gap-2 ${RESUME_DATA.projects.length === 1 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3'}`}
+          >
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
