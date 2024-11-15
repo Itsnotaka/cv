@@ -1,20 +1,18 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from 'lucide-react';
-import type { Metadata } from 'next';
-import { CommandMenu } from '~/components/command-menu';
-import { ProjectCard } from '~/components/project-card';
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
-import { Badge } from '~/components/ui/badge';
-import { Button } from '~/components/ui/button';
-import { Card, CardContent, CardHeader } from '~/components/ui/card';
-import { Section } from '~/components/ui/section';
-import { RESUME_DATA } from '~/data/resume-data';
+import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import type { Metadata } from "next";
+import { CommandMenu } from "~/components/command-menu";
+import { ProjectCard } from "~/components/project-card";
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
+import { Badge } from "~/components/ui/badge";
+import { Button } from "~/components/ui/button";
+import { Card, CardContent, CardHeader } from "~/components/ui/card";
+import { Section } from "~/components/ui/section";
+import { RESUME_DATA } from "~/data/resume-data";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
 };
-
-export const experimental_ppr = true;
 
 export default function Page() {
   return (
@@ -75,7 +73,7 @@ export default function Page() {
           </div>
 
           <Avatar className="size-28">
-            <AvatarImage alt={RESUME_DATA.name} src={'/avatar.jpeg'} />
+            <AvatarImage alt={RESUME_DATA.name} src={"/avatar.jpeg"} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
@@ -90,25 +88,42 @@ export default function Page() {
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
+                    <div className="flex items-center gap-x-2">
+                      {/* {work.logo && (
+                        <div className="flex size-6 shrink-0 items-center justify-center">
+                          {typeof work.logo === "function" ? (
+                            // For SVG components
+                            <work.logo className="size-6" />
+                          ) : (
+                            // For static images
+                            <img
+                              src={work.logo.src}
+                              alt={`${work.company} logo`}
+                              className="size-6 shrink-0 object-contain"
+                            />
+                          )}
+                        </div>
+                      )} */}
+                      <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                        <a className="hover:underline" href={work.link}>
+                          {work.company}
+                        </a>
 
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
+                        <span className="inline-flex gap-x-1">
+                          {work.badges.map((badge) => (
+                            <Badge
+                              variant="secondary"
+                              className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                              key={badge}
+                            >
+                              {badge}
+                            </Badge>
+                          ))}
+                        </span>
+                      </h3>
+                    </div>
                     <div className="text-gray-500 text-sm tabular-nums">
-                      {work.start} - {work.end ?? 'Present'}
+                      {work.start} - {work.end ?? "Present"}
                     </div>
                   </div>
 
@@ -122,7 +137,7 @@ export default function Page() {
         <Section className="scroll-mb-16">
           <h2 className="font-bold text-xl">Projects</h2>
           <div
-            className={`-mx-3 grid gap-3 print:gap-2 ${RESUME_DATA.projects.length === 1 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3'}`}
+            className={`-mx-3 grid gap-3 print:gap-2 ${RESUME_DATA.projects.length === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3"}`}
           >
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -131,7 +146,7 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   tags={project.techStack}
-                  link={'link' in project ? project.link : undefined}
+                  link={"link" in project ? project.link : undefined}
                 />
               );
             })}
@@ -173,7 +188,7 @@ export default function Page() {
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
-            title: 'Personal Website',
+            title: "Personal Website",
           },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,

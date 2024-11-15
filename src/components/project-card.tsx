@@ -1,5 +1,5 @@
-import { Badge } from './ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Badge } from "./ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 interface Props {
   title: string;
@@ -28,7 +28,7 @@ export function ProjectCard({ title, description, tags, link }: Props) {
             )}
           </CardTitle>
           <div className="hidden font-mono text-xs underline print:visible">
-            {link?.replace('https://', '').replace('www.', '').replace('/', '')}
+            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
           <CardDescription className="font-mono text-xs print:text-[10px]">{description}</CardDescription>
         </div>

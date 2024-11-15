@@ -1,35 +1,23 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.1/schema.json",
-  "vcs": {
-    "enabled": false,
-    "clientKind": "git",
-    "useIgnoreFile": false
-  },
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
     "ignoreUnknown": false,
     "ignore": [".next", "node_modules", ".vercel"]
   },
   "linter": {
     "enabled": true,
-    "rules": { "recommended": true,"nursery" :{
-      "useSortedClasses":"info"
-    }}
-    
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": "info"
+      }
+    }
   },
   "formatter": {
     "indentStyle": "space",
-    "lineWidth": 100
+    "lineWidth": 120
   },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "single",
-      "lineWidth": 120
-    }
-  },
-  "json": {
-    "formatter": {
-      "enabled": false
-    }
-  },
-  "organizeImports": { "enabled": true }
+  "organizeImports": {
+    "enabled": true
+  }
 }
