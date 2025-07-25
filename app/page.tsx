@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
 import { CVSection } from '~/components/cv-section';
 import { EducationItem } from '~/components/education-item';
 import { ExperienceItem } from '~/components/experience-item';

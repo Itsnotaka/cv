@@ -85,27 +85,27 @@ export const resumeData: ResumeData = {
       role: 'First Lead Frontend Developer Intern',
       time: 'August 2024 — November 2024',
       description:
-        'Built a web app for a startup that helps users track their daily habits and goals.',
+        'Migrated a Vue.js codebase to a Monorepo (Turborepo) with Nuxt.js and Tailwind CSS. Reduced the project roadmap from 12 months to 2 months.',
     },
     {
       company: 'Noya Software (YC W24)',
       role: 'Software Engineer',
       time: 'October 2024 — November 2024',
       description:
-        'Collaborated with the CEO to create a demo project showcasing their technology stack and product capabilities.',
+        'Collaborated with the CEO to create a demo project testing and showcasing their technology stack and product capabilities.',
     },
     {
       company: 'PartyKit (acquired by Cloudflare)',
       role: 'Software Engineer',
       time: 'August 2023 — November 2024',
       description:
-        'Worked on a cloud platform that transforms Cloudflare durable objects into a host for real-time applications.',
+        'An open source platform for realtime, multiplayer, collaborative apps. Built a production-ready demo and helped with the documentation.',
     },
   ],
   education: [
     {
       institution: 'Penn State University',
-      degree: 'Bachelor of Science - BS, Business/Computer Science',
+      degree: 'Bachelor of Science - BS, Business Management',
       time: 'July 2021 — May 2025',
     },
     {
