@@ -57,7 +57,7 @@ export const resumeData: ResumeData = {
   email: 'mjfu@flowapp.so',
   phone: '+1 929 513 2767',
   twitter: '@d2ac__',
-  summary: `I'm the first Design Engineer at Firetiger where I translate agent investigations into simple user experiences. Before that, I was the community engineer at PartyKit.`,
+  summary: `I'm the first Design Engineer at Firetiger where I translate agent investigations into simple user experiences. Before that, I was the community engineer at PartyKit. `,
   links: [
     {
       name: 'GitHub',
@@ -75,6 +75,14 @@ export const resumeData: ResumeData = {
       role: 'System Design Engineer',
       time: 'May 2025 — Present',
       description: 'Designing & building the UI for the agent investigations.',
+    },
+    {
+      company: 'PartyKit (acquired by Cloudflare)',
+      companyUrl: 'https://www.partykit.io/',
+      role: 'Software Engineer',
+      time: 'August 2023 — November 2024',
+      description:
+        'An open source platform for realtime, multiplayer, collaborative apps. Built a production-ready demo and helped with the documentation.',
     },
     {
       company: 'Flowapp',
@@ -98,14 +106,6 @@ export const resumeData: ResumeData = {
       time: 'October 2024 — November 2024',
       description:
         'Collaborated with the CEO to create a demo project testing and showcasing their technology stack and product capabilities.',
-    },
-    {
-      company: 'PartyKit (acquired by Cloudflare)',
-      companyUrl: 'https://www.partykit.io/',
-      role: 'Software Engineer',
-      time: 'August 2023 — November 2024',
-      description:
-        'An open source platform for realtime, multiplayer, collaborative apps. Built a production-ready demo and helped with the documentation.',
     },
   ],
   education: [

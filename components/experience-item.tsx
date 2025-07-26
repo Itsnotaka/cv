@@ -13,15 +13,15 @@ export function ExperienceItem({
   description,
 }: ExperienceItemProps) {
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex flex-row gap-x-1 items-center">
-        <h3 className="font-600 text-14 text-high-contrast leading-20">
+    <div className="flex w-full flex-col">
+      <div className="flex flex-row items-center gap-x-1">
+        <h3 className="font-600 text-13 text-high-contrast leading-20">
           {companyUrl ? (
             <a
+              className="hover:underline"
               href={companyUrl}
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:underline"
             >
               {company}
             </a>
@@ -29,9 +29,9 @@ export function ExperienceItem({
             company
           )}
         </h3>
-        <p className="opacity-50 text-14 leading-20">{time}</p>
+        <p className="text-13 leading-20 opacity-50">{time}</p>
       </div>
-      <p className="opacity-75 text-14 leading-20">{description}</p>
+      <p className="text-13 leading-20 opacity-75">{description}</p>
     </div>
   );
 }

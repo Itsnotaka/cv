@@ -20,8 +20,10 @@ export function SkillList({ skills }: SkillListProps) {
   // Sort categories by average stack position (frontend first)
   const sortedCategories = Object.entries(skillsByCategory).sort(
     ([, aSkills], [, bSkills]) => {
-      const aAvg = aSkills.reduce((sum, s) => sum + s.stackPosition, 0) / aSkills.length;
-      const bAvg = bSkills.reduce((sum, s) => sum + s.stackPosition, 0) / bSkills.length;
+      const aAvg =
+        aSkills.reduce((sum, s) => sum + s.stackPosition, 0) / aSkills.length;
+      const bAvg =
+        bSkills.reduce((sum, s) => sum + s.stackPosition, 0) / bSkills.length;
       return aAvg - bAvg;
     }
   );
@@ -31,14 +33,24 @@ export function SkillList({ skills }: SkillListProps) {
       {sortedCategories.map(([category, categorySkills]) => {
         // Sort skills within category by proficiency (expert first)
         const sortedSkills = [...categorySkills].sort((a, b) => {
-          const proficiencyOrder = { expert: 0, advanced: 1, intermediate: 2, beginner: 3 };
-          return proficiencyOrder[a.proficiency] - proficiencyOrder[b.proficiency];
+          const proficiencyOrder = {
+            expert: 0,
+            advanced: 1,
+            intermediate: 2,
+            beginner: 3,
+          };
+          return (
+            proficiencyOrder[a.proficiency] - proficiencyOrder[b.proficiency]
+          );
         });
 
         return (
-          <div key={category} className="flex flex-wrap items-baseline gap-x-1.5">
+          <div
+            className="flex flex-wrap items-baseline gap-x-1.5"
+            key={category}
+          >
             {sortedSkills.map((skill, index) => (
-              <span key={skill.name} className="inline-flex items-baseline">
+              <span className="inline-flex items-baseline" key={skill.name}>
                 <span className="text-13/20" style={{ color: '#1b1b18' }}>
                   {skill.name}
                 </span>
