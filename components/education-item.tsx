@@ -12,7 +12,7 @@ export function EducationItem({
   return (
     <div>
       <div className="mb-1 flex items-baseline justify-between gap-4">
-        <h3 className="font-weight-600 text-14 text-high-contrast leading-20">
+        <h3 className="font-600 text-14 text-high-contrast leading-20">
           {institution}
         </h3>
         <span className="flex-shrink-0 whitespace-nowrap text-13 text-gray10 leading-16">

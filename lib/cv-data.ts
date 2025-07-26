@@ -1,5 +1,6 @@
 export interface Experience {
   company: string;
+  companyUrl?: string;
   role: string;
   time: string;
   description: string;
@@ -70,18 +71,21 @@ export const resumeData: ResumeData = {
   experience: [
     {
       company: 'Firetiger',
+      companyUrl: 'https://firetiger.com/',
       role: 'System Design Engineer',
       time: 'May 2025 — Present',
       description: 'Designing & building the UI for the agent investigations.',
     },
     {
       company: 'Flowapp',
+      companyUrl: 'https://www.flowapp.so/',
       role: 'Software Engineer',
       time: 'January 2019 — Present',
       description: `Design, build, and launch Flow's web app out of Beta. Handled marketing, sales, customer support, and everything in between. Mentioned in @supermemoryai and @partykit`,
     },
     {
       company: 'Aiplux',
+      companyUrl: 'https://aiplux.com/',
       role: 'First Lead Frontend Developer Intern',
       time: 'August 2024 — November 2024',
       description:
@@ -89,6 +93,7 @@ export const resumeData: ResumeData = {
     },
     {
       company: 'Noya Software (YC W24)',
+      companyUrl: 'https://www.noya.io/',
       role: 'Software Engineer',
       time: 'October 2024 — November 2024',
       description:
@@ -96,6 +101,7 @@ export const resumeData: ResumeData = {
     },
     {
       company: 'PartyKit (acquired by Cloudflare)',
+      companyUrl: 'https://www.partykit.io/',
       role: 'Software Engineer',
       time: 'August 2023 — November 2024',
       description:
@@ -116,6 +122,12 @@ export const resumeData: ResumeData = {
   ],
   skills: [
     {
+      name: 'React',
+      proficiency: 'expert',
+      category: 'frontend',
+      stackPosition: 20,
+    },
+    {
       name: 'TypeScript',
       proficiency: 'expert',
       category: 'fullstack',
@@ -128,10 +140,16 @@ export const resumeData: ResumeData = {
       stackPosition: 50,
     },
     {
-      name: 'React',
-      proficiency: 'expert',
-      category: 'frontend',
-      stackPosition: 20,
+      name: 'Python',
+      proficiency: 'advanced',
+      category: 'backend',
+      stackPosition: 75,
+    },
+    {
+      name: 'Go',
+      proficiency: 'intermediate',
+      category: 'backend',
+      stackPosition: 80,
     },
     {
       name: 'Vue.js',
@@ -152,25 +170,7 @@ export const resumeData: ResumeData = {
       stackPosition: 80,
     },
     {
-      name: 'Monorepo Architecture',
-      proficiency: 'advanced',
-      category: 'architecture',
-      stackPosition: 60,
-    },
-    {
-      name: 'Real-time Applications',
-      proficiency: 'advanced',
-      category: 'fullstack',
-      stackPosition: 65,
-    },
-    {
-      name: 'AI Integration',
-      proficiency: 'intermediate',
-      category: 'integration',
-      stackPosition: 70,
-    },
-    {
-      name: 'CSS/Tailwind',
+      name: 'Tailwind CSS',
       proficiency: 'expert',
       category: 'frontend',
       stackPosition: 15,
@@ -194,7 +194,7 @@ export const resumeData: ResumeData = {
       stackPosition: 90,
     },
     {
-      name: 'Git/GitHub',
+      name: 'Git',
       proficiency: 'expert',
       category: 'fullstack',
       stackPosition: 50,

@@ -1,28 +1,37 @@
 interface ExperienceItemProps {
   role: string;
   company: string;
+  companyUrl?: string;
   time: string;
   description: string;
 }
 
 export function ExperienceItem({
-  role,
   company,
+  companyUrl,
   time,
   description,
 }: ExperienceItemProps) {
   return (
-    <div className="group">
-      <div className="mb-1 flex items-baseline justify-between gap-4">
-        <h3 className="font-weight-600 text-14 text-high-contrast leading-20">
-          {role}
+    <div className="flex flex-col w-full">
+      <div className="flex flex-row gap-x-1 items-center">
+        <h3 className="font-600 text-14 text-high-contrast leading-20">
+          {companyUrl ? (
+            <a
+              href={companyUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="hover:underline"
+            >
+              {company}
+            </a>
+          ) : (
+            company
+          )}
         </h3>
-        <span className="flex-shrink-0 whitespace-nowrap text-13 text-gray10 leading-16">
-          {time}
-        </span>
+        <p className="opacity-50 text-14 leading-20">{time}</p>
       </div>
-      <p className="mb-1 text-14 text-gray11 leading-20">{company}</p>
-      <p className="text-14 text-gray12 leading-20">{description}</p>
+      <p className="opacity-75 text-14 leading-20">{description}</p>
     </div>
   );
 }
