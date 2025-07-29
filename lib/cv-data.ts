@@ -73,14 +73,14 @@ export const resumeData: ResumeData = {
       company: 'Firetiger',
       companyUrl: 'https://firetiger.com/',
       role: 'System Design Engineer',
-      time: 'May 2025 — Present',
+      time: 'May 2024 — Present',
       description: 'Designing & building the UI for the agent investigations.',
     },
     {
       company: 'PartyKit (acquired by Cloudflare)',
       companyUrl: 'https://www.partykit.io/',
       role: 'Software Engineer',
-      time: 'August 2023 — November 2024',
+      time: 'August 2023 — July 2024',
       description:
         'An open source platform for realtime, multiplayer, collaborative apps. Built a production-ready demo and helped with the documentation.',
     },
@@ -88,14 +88,14 @@ export const resumeData: ResumeData = {
       company: 'Flowapp',
       companyUrl: 'https://www.flowapp.so/',
       role: 'Software Engineer',
-      time: 'January 2021 — March 2025',
+      time: 'January 2023 — December 2023',
       description: `Founded, designed, built, and launched Flow's web app out of Beta. Handled marketing, sales, customer support, and everything in between. Mentioned in @supermemoryai and @partykit`,
     },
     {
       company: 'Aiplux',
       companyUrl: 'https://aiplux.com/',
       role: 'First Lead Frontend Developer Intern',
-      time: 'August 2024 — November 2024',
+      time: 'August 2022 — July 2023',
       description:
         'Migrated a Vue.js codebase to a Monorepo (Turborepo) with Nuxt.js and Tailwind CSS. Reduced the project roadmap from 12 months to 2 months.',
     },
@@ -103,7 +103,7 @@ export const resumeData: ResumeData = {
       company: 'Noya Software (YC W24)',
       companyUrl: 'https://www.noya.io/',
       role: 'Software Engineer',
-      time: 'October 2024 — November 2024',
+      time: 'October 2021 — September 2022',
       description:
         'Collaborated with the CEO to create a demo project testing and showcasing their technology stack and product capabilities.',
     },
