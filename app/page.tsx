@@ -14,7 +14,7 @@ export default function Home() {
         location={resumeData.location}
         name={resumeData.name}
         phone={resumeData.phone}
-        profileImage="https://om32oh4l85.ufs.sh/f/ZSTWlVhf6QMwHjJC1esTyb2ri8KE51zJCkDBmtNxGR7AwL3n"
+        profileImage="https://om32oh4l85.ufs.sh/f/ZSTWlVhf6QMwZm9YE8hf6QMwxWIC2TO8ryuHY4DtoSPUj3El"
         title={resumeData.title}
         twitter={resumeData.twitter}
       />
