@@ -1,4 +1,4 @@
-import type { Experience } from '~/lib/cv-data';
+import type { Experience } from "~/lib/cv-data";
 
 interface ExperienceSectionProps {
   experiences: Experience[];

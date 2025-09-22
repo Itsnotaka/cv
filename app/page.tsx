@@ -1,9 +1,9 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: Im lazy */
-import { AboutSection } from '~/components/about-section';
-import { EducationSection } from '~/components/education-section';
-import { ExperienceSection } from '~/components/experience-section';
-import { ProfileHeader } from '~/components/profile-header';
-import { resumeData } from '~/lib/cv-data';
+import { AboutSection } from "~/components/about-section";
+import { EducationSection } from "~/components/education-section";
+import { ExperienceSection } from "~/components/experience-section";
+import { ProfileHeader } from "~/components/profile-header";
+import { resumeData } from "~/lib/cv-data";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         location={resumeData.location}
         name={resumeData.name}
         phone={resumeData.phone}
-        profileImage="https://om32oh4l85.ufs.sh/f/ZSTWlVhf6QMwZm9YE8hf6QMwxWIC2TO8ryuHY4DtoSPUj3El"
+        profileImage="https://om32oh4l85.ufs.sh/f/ZSTWlVhf6QMwVngkI4jbZ1SlxuUWiBGCoRXn5L4rfjeIwPVJ"
         title={resumeData.title}
         twitter={resumeData.twitter}
       />

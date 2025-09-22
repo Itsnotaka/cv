@@ -1,15 +1,17 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    ppr: true,
+  typedRoutes: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'om32oh4l85.ufs.sh',
+        protocol: "https",
+        hostname: "om32oh4l85.ufs.sh",
+        pathname: "/f/*",
       },
     ],
   },

@@ -21,7 +21,7 @@ export function ProjectItem({
       <div className="flex flex-col gap-y-4">
         <div>
           <h3 className="font-600 text-18 text-high-contrast leading-24">
-            {title} at{' '}
+            {title} at{" "}
             {companyUrl ? (
               <a
                 className="hover:underline"

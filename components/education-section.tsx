@@ -1,4 +1,4 @@
-import type { Education } from '~/lib/cv-data';
+import type { Education } from "~/lib/cv-data";
 
 interface EducationSectionProps {
   education: Education[];

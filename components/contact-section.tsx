@@ -1,4 +1,4 @@
-import type { Link } from '~/lib/cv-data';
+import type { Link } from "~/lib/cv-data";
 
 interface ContactSectionProps {
   email: string;

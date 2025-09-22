@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import type { Link } from '~/lib/cv-data';
+import Image from "next/image";
+import type { Link } from "~/lib/cv-data";
 
 interface ProfileHeaderProps {
   name: string;
@@ -24,10 +24,10 @@ export function ProfileHeader({
 }: ProfileHeaderProps) {
   const getIconForLink = (linkName: string) => {
     switch (linkName.toLowerCase()) {
-      case 'github':
-        return '/github.svg';
-      case 'linkedin':
-        return '/linkedin.svg';
+      case "github":
+        return "/github.svg";
+      case "linkedin":
+        return "/linkedin.svg";
       default:
         return null;
     }
@@ -59,7 +59,7 @@ export function ProfileHeader({
               <span className="text-gray9">•</span>
               <a
                 className="transition-colors duration-300 hover:text-gray12"
-                href={`tel:${phone.replace(/\s/g, '')}`}
+                href={`tel:${phone.replace(/\s/g, "")}`}
               >
                 {phone}
               </a>
@@ -69,7 +69,7 @@ export function ProfileHeader({
                 <>
                   <a
                     className="flex items-center gap-1 transition-colors duration-300 hover:text-gray12"
-                    href={`https://twitter.com/${twitter.replace('@', '')}`}
+                    href={`https://twitter.com/${twitter.replace("@", "")}`}
                     rel="noopener noreferrer"
                     target="_blank"
                   >

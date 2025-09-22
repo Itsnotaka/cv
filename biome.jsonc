@@ -1,8 +1,8 @@
 {
-  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["ultracite"],
   "files": {
-    "includes": ["**", "!**/*.node_modules/**", "!**/*.next/**", "!**/*.css"]
+    "includes": ["**", "!**/*.node_modules", "!**/*.next", "!**/*.css"]
   },
   "linter": {
     "enabled": true,
@@ -13,6 +13,14 @@
       },
       "suspicious": {
         "noArrayIndexKey": "off"
+      },
+      "nursery": {
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "interface"
+          }
+        }
       }
     }
   },

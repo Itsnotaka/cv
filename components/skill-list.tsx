@@ -1,4 +1,4 @@
-import type { Skill } from '~/lib/cv-data';
+import type { Skill } from "~/lib/cv-data";
 
 interface SkillListProps {
   skills: Skill[];
@@ -51,12 +51,12 @@ export function SkillList({ skills }: SkillListProps) {
           >
             {sortedSkills.map((skill, index) => (
               <span className="inline-flex items-baseline" key={skill.name}>
-                <span className="text-13/20" style={{ color: '#1b1b18' }}>
+                <span className="text-13/20" style={{ color: "#1b1b18" }}>
                   {skill.name}
                 </span>
                 {index < sortedSkills.length - 1 && (
-                  <span className="text-13/20" style={{ color: '#1b1b1833' }}>
-                    {' · '}
+                  <span className="text-13/20" style={{ color: "#1b1b1833" }}>
+                    {" · "}
                   </span>
                 )}
               </span>
