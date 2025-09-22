@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "pnpx ultracite lint",
-    "format": "pnpx ultracite format"
+    "lint": "pnpx ultracite check",
+    "format": "pnpx ultracite fix"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
