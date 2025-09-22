@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CV - System Engineer",
-  description:
-    "Software engineer with experience in building scalable applications and real-time systems",
+  title: "CV - Min Chun Fu",
+  description: "Design Engineer || Min Chun Fu's CV :) Enjoy!",
 };
 
 export default function RootLayout({
