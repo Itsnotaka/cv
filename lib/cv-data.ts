@@ -62,10 +62,11 @@ export const resumeData: ResumeData = {
   twitter: "@d2ac__",
   links: [
     { name: "GitHub", url: "https://github.com/itsnotaka" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/nameisdaniel" }
+    { name: "LinkedIn", url: "https://linkedin.com/in/nameisdaniel" },
   ],
   objective:
     "I design systems that help people complete complex, real‑time work with less friction. Recently I’ve focused on agent‑investigation workflows",
+  education: [
     {
       institution: "Penn State University",
       degree: "B.S. Business Management",
