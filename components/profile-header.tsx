@@ -1,5 +1,10 @@
 import Image from "next/image";
-import type { Link } from "~/lib/cv-data";
+import { Fragment } from "react";
+
+interface Link {
+  name: string;
+  url: string;
+}
 
 interface ProfileHeaderProps {
   name: string;
@@ -88,11 +93,10 @@ export function ProfileHeader({
               {links.map((link, index) => {
                 const icon = getIconForLink(link.name);
                 return (
-                  <>
+                  <Fragment key={link.url}>
                     <a
                       className="flex items-center gap-1 transition-colors duration-300 hover:text-gray12"
                       href={link.url}
-                      key={link.url}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -110,7 +114,7 @@ export function ProfileHeader({
                     {index < links.length - 1 && (
                       <span className="text-gray9">•</span>
                     )}
-                  </>
+                  </Fragment>
                 );
               })}
             </div>

@@ -1,203 +1,134 @@
-export interface Experience {
-  company: string;
-  companyUrl?: string;
-  role: string;
-  time: string;
-  description: string;
-}
-
 export interface Education {
   institution: string;
   degree: string;
   time: string;
+  gpa?: string;
+  coursework?: string[];
 }
 
-export interface Link {
-  name: string;
-  url: string;
+export interface Experience {
+  organization: string;
+  role: string;
+  time: string;
+  bullets: string[];
+  url?: string;
+  category: "research" | "industry" | "teaching" | "service";
 }
 
-export type SkillProficiency =
-  | "beginner"
-  | "intermediate"
-  | "advanced"
-  | "expert";
-export type SkillCategory =
-  | "frontend"
-  | "backend"
-  | "fullstack"
-  | "architecture"
-  | "integration";
+export interface Publication {
+  citation: string;
+  link?: string;
+}
 
-export interface Skill {
+export interface SkillGroup {
+  heading: string;
+  items: string[];
+}
+
+export interface Award {
   name: string;
-  proficiency: SkillProficiency;
-  category: SkillCategory;
-  stackPosition: number; // 0 (pure frontend) to 100 (pure backend)
+  issuer?: string;
+  time?: string;
 }
 
 export interface ResumeData {
   name: string;
+  preferredName?: string;
   title: string;
-  location: string;
+  about: string;
   email: string;
   phone: string;
+  location: string;
   twitter?: string;
-  summary: string;
-  links: Link[];
-  experience: Experience[];
+  links: { name: string; url: string }[];
   education: Education[];
-  skills: Skill[];
+  experience: Experience[];
+  publications?: Publication[];
+  skills?: SkillGroup[];
+  awards?: Award[];
+  // Optional: keep objective for internal use
+  objective?: string;
 }
 
 export const resumeData: ResumeData = {
   name: "Min Chun Fu",
+  preferredName: "Daniel",
   title: "System Design Engineer",
-  location: "SF/NYC",
+  about:
+    "Designs systems that help people complete complex, real‑time work with less friction. Recent focus on agent‑investigation workflows—observing hesitation points, restructuring flows, and validating improvements with studies and instrumentation.",
   email: "daniel.fu90@gmail.com",
   phone: "+1 929 513 2767",
+  location: "HK/SF",
   twitter: "@d2ac__",
-  summary: `I'm the first Design Engineer at Firetiger where I translate agent investigations into simple user experiences. Before that, I was the community engineer at PartyKit. `,
   links: [
-    {
-      name: "GitHub",
-      url: "https://github.com/itsnotaka",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://linkedin.com/in/nameisdaniel",
-    },
+    { name: "GitHub", url: "https://github.com/itsnotaka" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/nameisdaniel" }
   ],
-  experience: [
-    {
-      company: "Firetiger",
-      companyUrl: "https://firetiger.com/",
-      role: "System Design Engineer",
-      time: "May 2025 — Present",
-      description: "Designing & building the UI for the agent investigations.",
-    },
-    {
-      company: "PartyKit (acquired by Cloudflare)",
-      companyUrl: "https://www.partykit.io/",
-      role: "Software Engineer",
-      time: "August 2023 — November 2024",
-      description:
-        "An open source platform for realtime, multiplayer, collaborative apps. Built a production-ready demo and helped with the documentation.",
-    },
-    {
-      company: "Flowapp",
-      companyUrl: "https://www.flowapp.so/",
-      role: "Software Engineer",
-      time: "January 2021 — March 2025",
-      description: `Founded, designed, built, and launched Flow's web app out of Beta. Handled marketing, sales, customer support, and everything in between. Mentioned in @supermemoryai and @partykit`,
-    },
-    {
-      company: "Aiplux",
-      companyUrl: "https://aiplux.com/",
-      role: "First Lead Frontend Developer Intern",
-      time: "August 2024 — November 2024",
-      description:
-        "Migrated a Vue.js codebase to a Monorepo (Turborepo) with Nuxt.js and Tailwind CSS. Reduced the project roadmap from 12 months to 2 months.",
-    },
-    {
-      company: "Noya Software (YC W24)",
-      companyUrl: "https://www.noya.io/",
-      role: "Software Engineer",
-      time: "October 2024 — November 2024",
-      description:
-        "Collaborated with the CEO to create a demo project testing and showcasing their technology stack and product capabilities.",
-    },
-  ],
+  objective:
+    "I design systems that help people complete complex, real‑time work with less friction. Recently I’ve focused on agent‑investigation workflows—observing hesitation points, restructuring flows, and validating improvements with studies and instrumentation. I’m applying to a master’s program to deepen research methods and strengthen analytic rigor.",
   education: [
     {
       institution: "Penn State University",
-      degree: "Bachelor of Science - BS, Business Management",
-      time: "July 2021 — May 2025",
+      degree: "B.S. Business Management",
+      time: "Jul 2021 – May 2025",
+      coursework: [
+        "Statistics",
+        "Data Analysis",
+        "Project Management",
+        "Human Resources",
+      ],
     },
     {
       institution: "The Chinese University of Hong Kong",
       degree: "Exchange Program",
-      time: "January 2024 — June 2024",
+      time: "Jan 2024 – Jun 2024",
     },
   ],
-  skills: [
+  experience: [
     {
-      name: "React",
-      proficiency: "expert",
-      category: "frontend",
-      stackPosition: 20,
+      organization: "Firetiger",
+      role: "System Design Engineer (first design‑engineering hire)",
+      time: "May 2025 – Present",
+      category: "research",
+      url: "https://firetiger.com/",
+      bullets: [
+        "Designed the agent‑investigation UI and chat flow from scratch, defining information architecture, interaction patterns, and system components.",
+        "Built monitoring views over the data lake (logs, traces, metrics) to support investigations and day‑to‑day operations.",
+        "Created SLO monitoring and observer dashboards to surface regressions proactively and guide fixes.",
+        "Prototyped an embedded SQL editor and analysis tools to enable self‑serve debugging and data exploration.",
+      ],
     },
     {
-      name: "TypeScript",
-      proficiency: "expert",
-      category: "fullstack",
-      stackPosition: 50,
+      organization: "PartyKit (acquired by Cloudflare)",
+      role: "Software Engineer (Community)",
+      time: "Aug 2023 – Nov 2024",
+      category: "industry",
+      url: "https://www.partykit.io/",
+      bullets: [
+        "Built a multiplayer demo and authored practical guides that improved developer onboarding clarity.",
+        "Converted recurring integration questions into documentation and examples adopted by hundreds of developers.",
+      ],
     },
     {
-      name: "JavaScript",
-      proficiency: "expert",
-      category: "fullstack",
-      stackPosition: 50,
+      organization: "Flowapp",
+      role: "Founder & Software Engineer",
+      time: "Jan 2021 – Mar 2025",
+      category: "industry",
+      url: "https://www.flowapp.so/",
+      bullets: [
+        "Delivered a web application from beta to production with end‑to‑end ownership across product, engineering, and support.",
+        "Led user interviews and feedback synthesis to prioritize workflows and ship focused iterations.",
+      ],
     },
     {
-      name: "Python",
-      proficiency: "advanced",
-      category: "backend",
-      stackPosition: 75,
-    },
-    {
-      name: "Go",
-      proficiency: "intermediate",
-      category: "backend",
-      stackPosition: 80,
-    },
-    {
-      name: "Vue.js",
-      proficiency: "advanced",
-      category: "frontend",
-      stackPosition: 25,
-    },
-    {
-      name: "Next.js",
-      proficiency: "expert",
-      category: "fullstack",
-      stackPosition: 40,
-    },
-    {
-      name: "Node.js",
-      proficiency: "advanced",
-      category: "backend",
-      stackPosition: 80,
-    },
-    {
-      name: "Tailwind CSS",
-      proficiency: "expert",
-      category: "frontend",
-      stackPosition: 15,
-    },
-    {
-      name: "GraphQL",
-      proficiency: "advanced",
-      category: "fullstack",
-      stackPosition: 55,
-    },
-    {
-      name: "PostgreSQL",
-      proficiency: "intermediate",
-      category: "backend",
-      stackPosition: 85,
-    },
-    {
-      name: "Docker",
-      proficiency: "intermediate",
-      category: "backend",
-      stackPosition: 90,
-    },
-    {
-      name: "Git",
-      proficiency: "expert",
-      category: "fullstack",
-      stackPosition: 50,
+      organization: "Aiplux",
+      role: "Lead Frontend Engineer",
+      time: "Aug 2024 – Nov 2024",
+      category: "industry",
+      url: "https://aiplux.com/",
+      bullets: [
+        "Consolidated a legacy codebase into a monorepo, aligning teams and compressing the delivery timeline by several months.",
+      ],
     },
   ],
 };

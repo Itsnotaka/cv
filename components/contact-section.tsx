@@ -1,4 +1,7 @@
-import type { Link } from "~/lib/cv-data";
+interface Link {
+  name: string;
+  url: string;
+}
 
 interface ContactSectionProps {
   email: string;
