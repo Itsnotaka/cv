@@ -65,8 +65,7 @@ export const resumeData: ResumeData = {
     { name: "LinkedIn", url: "https://linkedin.com/in/nameisdaniel" }
   ],
   objective:
-    "I design systems that help people complete complex, real‑time work with less friction. Recently I’ve focused on agent‑investigation workflows—observing hesitation points, restructuring flows, and validating improvements with studies and instrumentation. I’m applying to a master’s program to deepen research methods and strengthen analytic rigor.",
-  education: [
+    "I design systems that help people complete complex, real‑time work with less friction. Recently I’ve focused on agent‑investigation workflows"
     {
       institution: "Penn State University",
       degree: "B.S. Business Management",
